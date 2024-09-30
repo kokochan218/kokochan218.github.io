@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chandra Herjuno's Website</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1a1a1a;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 20px 60px;
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 60px;
+            transition: all 0.3s ease;
+        }
+
+        section#home {
+            text-align: center;
+            background-color: #f1f1f1;
+            border-radius: 0;
+            padding: 150px 20px;
+        }
+
+        section#home h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        section#home p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section#about h2, section#portfolio h2, section#contact h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        section#about, section#portfolio, section#contact {
+            margin-top: 20px;
+        }
+
+        h3 {
+            margin-top: 40px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        table, th, td {
+            border: none;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #00bcd4;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        td {
+            background-color: #f1f1f1;
+            font-size: 16px;
+        }
+
+        table tr {
+            border-bottom: 2px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        table tr:hover {
+            background-color: #f1f9ff;
+        }
+
+        /* Button Styling (Optional) */
+        button {
+            background-color: #00bcd4;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 30px;
+        }
+
+        button:hover {
+            background-color: #008c9e;
+        }
+
+        /* Contact Section */
+        #contact ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #contact ul li {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        #contact ul li a {
+            color: #00bcd4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #contact ul li a:hover {
+            color: #008c9e;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1a1a1a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 80px 20px;
+            }
+
+            table, th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            section#home h1 {
+                font-size: 32px;
+            }
+
+            section#home p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">My Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Hi, my name is Chandra Herjuno, and this is my personal website where I share my portfolio and contact details. Feel free to explore!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is <strong>Chandra Herjuno</strong>. I am currently a student pursuing a Bachelor's Degree in Information Systems at Telkom University.</p>
+        <table>
+            <tr>
+                <th>Full Name</th>
+                <td>Chandra Herjuno</td>
+            </tr>
+            <tr>
+                <th>Program</th>
+                <td>Bachelor of Information Systems</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>chandraherjuno@outlook.com</td>
+            </tr>
+        </table>
+
+        <h3>Education</h3>
+        <table>
+            <tr>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Telkom University</td>
+                <td>2022 - Present</td>
+            </tr>
+            <tr>
+                <td>SMA Islam Al Azhar 5</td>
+                <td>Graduated</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- My Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Business Process Development</td>
+                <td>Development of business processes in the Information Systems Bachelor's program</td>
+            </tr>
+            <tr>
+                <td>Digital Content Development</td>
+                <td>Development of digital content for the Information Systems Bachelor's program</td>
+            </tr>
+                <td> UI/UX </td>
+                <td> UI/UX Development content for the Learning Management Systems Telkom University</td>
+            </table>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Informasi Lebih Lanjut dapat menghubungi email di :</p>
+        <ul>
+            <li>Email : <a href="mailto:chandraherjuno@outlook.com">chandraherjuno@outlook.com</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chandra Herjuno. All rights reserved.</p>
+    </footer>
+</body>
+</html>
